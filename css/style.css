@@ -468,6 +468,23 @@
 					background-image: url('images/arrow.svg');
 				}
 
+            input[type="button"].style3,
+            input[type="submit"].style3,
+            input[type="reset"].style3,
+            .button.style3 {
+				background-color: transparent;
+                border: solid 1px #E60082;
+                color: inherit;
+                border-radius: 0;
+            }
+
+                input[type="button"].style3:hover,
+                input[type="submit"].style3:hover,
+                input[type="reset"].style3:hover,
+                .button.style3:hover {
+                background-color: rgba(150,146,147,0.035);
+                }
+
 	/* Box */
 
 		.box {
