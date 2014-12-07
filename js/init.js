@@ -141,7 +141,7 @@
 				// Work.
 					$('#travel')
 						.scrollwatch({
-							delay:		25,
+							delay:		50,
 							range:		0.6,
 							anchor:		'center',
 							init:		function(t) { t.find('.row.images').addClass('inactive'); },

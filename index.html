@@ -20,6 +20,14 @@
 			<link rel="stylesheet" href="css/style-normal.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                               tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+                               });
+        </script>
+        <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
 	</head>
 	<body>
 
@@ -46,14 +54,14 @@
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content container 75%">
 					<header>
-						<h2>michela paganini.</h2>
+						<h2 style="color:#fff">Michela Paganini</h2>
 					</header>
 					<p>
-						Particle Physicist. Student at <strong>Yale University</strong>. Alumnus of <strong>Berkeley</strong> and <strong>Cambridge</strong>. World traveller. 
+						Particle Physicist. <strong style="color:#fff">Yale University</strong> graduate student. <strong style="color:#fff">UC Berkeley</strong> alumna. World traveller.
 					</p>
 				<!-- 	<p>Particle Physics at <strong>Yale University</strong>. Physics and Astrophysics at <strong>Berkeley</strong>. Cambridge. World Traveller. </p> -->
 					<footer>
-						<a href="#aboutme" class="button style2 down">learn more.</a>
+						<a href="#aboutme" class="button style2 down">learn more</a>
 					</footer>
 				</div>
 			</section>
@@ -62,36 +70,93 @@
 			<section id="aboutme" class="main style2 right dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>about me.</h2>
+                        <!-- <span class="icon fa-user"></span> -->
+						<h2>about me</h2>
 					</header>
-					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. 
-					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, 
-					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+					<p>I'm a 2nd year Physics PhD student at Yale University studying High Energy Physics. I love sports, technology and design. I'm a proud Alpha Phi and California Golden Bear.</p>
 				</div>
 				<a href="#skills" class="button style2 down anchored">Next</a>
 			</section>
 		
 
 		<!-- skills -->
+        
+        <section id="skills" class="main style3 primary">
+            <div class="content container">
+            <header>
+                <span class="icon fa-bar-chart"></span>
+                <h2>my skills</h2>
+                <p>
+                <p>
+            </header>
+            <div class="row">
+                
+                <div class="4u">
+                    
+                    <section>
+                        <font size="20"><span style="color:#E60082" class="icon feature fa-terminal"></span></font>
+                        <header>
+                            <h3>Programming</h3>
+                        </header>
+                        <p>C++, C, R, Python, Matlab, Perl, Bash. <br /><strong>I write a lot of C++.</strong> Don't believe me? Check out <a href="http://osrc.dfm.io/lukedeo" target = "_blank">my report card.</a> </p>
+                    </section>
+                    
+                </div>
+                <div class="4u">
+                    
+                    <section>
+                        <font size="20"><span style="color:#E60082" class="icon feature fa-laptop"></span></font>
+                        <header>
+                            <h3>General Computing</h3>
+                        </header>
+                        <p>Batch computing. GP<sup>2</sup>U programming. Basic sys-admin skills.
+                        <br />Extensive experience with <i class="fa fa-apple"></i>, <i class="fa fa-linux"></i>.
+                        <br />Some experience with <i class="fa fa-windows"></i>.
+                        <br />$\LaTeX$, MS Office, Photoshop.
+                        </p>
+                    </section>
+                    
+                </div>
+                <div class="4u">
+                    
+                    <section>
+                        <font size="20"><span style="color:#E60082" class="icon feature fa-check"></span></font>
+                        <header>
+                            <h3>Applied Mathematics</h3>
+                        </header>
+                        <p>Coursework in Machine Learning, Data Analysis, 
+                        Data Mining, Algorithm Design, Numerical Methods, 
+                        Functional Analysis, Real Analysis.
+                        </p>
+                    </section>
+                    
+                </div>
+            </div>
+            </div>
+            <a href="#work" class="button style2 down anchored">Next</a>
+        </section>
+        <!--
 			<section id="skills" class="main style3 primary">
 				<div class="content container">
 					<header>
-						<h2>my skills.</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. 
-						Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis 
-						arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+                        <span class="icon fa-bar-chart"></span>
+						<h2>my skills</h2>
+						<p>I wouldn't actually write anything here...</p>
 					</header>
-					
+		-->
 					<!-- Lightbox Gallery  -->
+        <!--
 						<div class="container 75% gallery">
+         -->
 							<!-- <span class="icon fa-gear"><span class="label">Feature 1</span></span> -->
-							<div class="row 0% images">
-								<div class="6u"><a href="images/fulls/01.jpg" class="image fit from-left"><img src="images/thumbs/01.jpg" title="This is a skill I have" alt="" /></a></div>
-								<div class="6u"><a href="images/fulls/02.jpg" class="image fit from-right"><img src="images/thumbs/02.jpg" title="And another skill..." alt="" /></a></div>
+		<!--
+                            <div class="row 0% images">
+								<div class="6u"><a href="images/fulls/board.jpg" class="image fit from-left"><img src="images/fulls/board.jpg" title="This is a skill I have" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/board.jpg" class="image fit from-right"><img src="images/fulls/board.jpg" title="And another skill..." alt="" /></a></div>
 							</div>
 							<div class="row 0% images">
-								<div class="6u"><a href="images/fulls/03.jpg" class="image fit from-left"><img src="images/thumbs/03.jpg" title="My third skill..." alt="" /></a></div>
-								<div class="6u"><a href="images/fulls/04.jpg" class="image fit from-right"><img src="images/thumbs/04.jpg" title="...and my last skill." alt=d "" /></a></div>
+								<div class="6u"><a href="images/fulls/board.jpg" class="image fit from-left"><img src="images/fulls/board.jpg" title="My third skill..." alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/board.jpg" class="image fit from-right"><img src="images/fulls/board.jpg" title="...and my last skill." alt=d "" /></a></div>
 							</div>
 
 
@@ -100,45 +165,45 @@
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
-
+         -->
 					<!-- work -->
-			<section id="work" class="main style2 left dark fullscreen">
-				<div class="content box style">
-					<header>
-						<h2>my work.</h2>
-					</header>
-					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. 
-					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, 
-					id varius justo euismod in. Curabitur egestas consectetur magna. Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. </p>
-				</div>
-				<a href="#travel" class="button style2 down anchored">Next</a>
-			</section>
-
+			
+            <section id="work" class="main style2 left dark fullscreen">
+                <div class="content box style">
+                    <header>
+                        <span class="icon fa-briefcase"></span>
+                        <h2>my work</h2>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
+                    Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
+                    id varius justo euismod in. Curabitur egestas consectetur magna. Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. </p>
+                </div>
+                <a href="#travel" class="button style2 down anchored">Next</a>
+            </section>
 			
 			
 		<!-- travel -->
 			<section id="travel" class="main style3 primary">
 				<div class="content container">
 					<header>
-						<h2>my travels.</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. 
-						Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis 
-						arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+                        <span class="icon fa-plane"></span>
+						<h2>my travels</h2>
+						<p>Whenever I get a chance, I like to travel the world, meet new people, discover new cultures and learn new languages. Here is a selection of some of my recent trips.</p>
 					</header>
 					
 					<!-- Lightbox Gallery  -->
 						<div class="container 75% gallery">
 							<div class="row 0% images">
-								<div class="6u"><a href="images/fulls/01.jpg" class="image fit from-left"><img src="images/thumbs/01.jpg" title="I went here for vacay" alt="" /></a></div>
-								<div class="6u"><a href="images/fulls/02.jpg" class="image fit from-right"><img src="images/thumbs/02.jpg" title="I went here for vacay" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/mexico.jpg" class="image fit from-left"><img src="images/thumbs/mexico.tiff" title="Mexico - March 2014" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/dubai.jpg" class="image fit from-right"><img src="images/thumbs/dubai.tiff" title="Dubai & Abu Dhabi - December 2013" alt="" /></a></div>
 							</div>
 							<div class="row 0% images">
-								<div class="6u"><a href="images/fulls/03.jpg" class="image fit from-left"><img src="images/thumbs/03.jpg" title="I went here for vacaye" alt="" /></a></div>
-								<div class="6u"><a href="images/fulls/04.jpg" class="image fit from-right"><img src="images/thumbs/04.jpg" title="I went here for vacay" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/england.jpg" class="image fit from-left"><img src="images/thumbs/england.tiff" title="England - Summer 2012" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/mauritius.jpg" class="image fit from-right"><img src="images/thumbs/mauritius.tiff" title="Mauritius - December 2012" alt="" /></a></div>
 							</div>
 							<div class="row 0% images">
-								<div class="6u"><a href="images/fulls/05.jpg" class="image fit from-left"><img src="images/thumbs/05.jpg" title="I went here for vacay" alt="" /></a></div>
-								<div class="6u"><a href="images/fulls/06.jpg" class="image fit from-right"><img src="images/thumbs/06.jpg" title="I went here for vacay" alt="" /></a></div>
+                                <div class="6u"><a href="images/fulls/jamaica.jpg" class="image fit from-left"><img src="images/thumbs/jamaica.tiff" title="Jamaica - March 2012" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/tahoe.jpg" class="image fit from-right"><img src="images/thumbs/tahoe.tiff" title="Lake Tahoe - December 2011" alt="" /></a></div>
 							</div>
 						</div>
 
@@ -149,9 +214,14 @@
 			<section id="contact" class="main style3 secondary">
 				<div class="content container">
 					<header>
-						<h2>get in touch.</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-							We'll put a link to your resume here...</p>
+                        <span class="icon fa-at"></span>
+						<h2>get in touch</h2>
+                        <p>
+                        <ul class="buttons">
+                            <li><a href="mailto:michela.paganini@yale.edu" class="button"><i class="fa fa-envelope-o"></i>&nbsp;Email</a></li>
+                            <!-- <li><a href="#" class="button special">LOL Wut</a></li> -->
+                        </ul>
+                      
 					</header>
 					<!-- <div class="box container 75%">
 					
@@ -181,10 +251,9 @@
 
 				<!-- Icons -->
 					<ul class="actions">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://twitter.com/WonderMicky" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://plus.google.com/109356208738453667148" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="https://www.linkedin.com/in/michelapaganini" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 					</ul>
 
 				<!-- Menu -->
