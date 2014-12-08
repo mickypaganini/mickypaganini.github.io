@@ -138,7 +138,7 @@
 							off:		function(t) { t.addClass('inactive'); }
 						});
 			
-				// Work.
+				// Travel.
 					$('#travel')
 						.scrollwatch({
 							delay:		50,
@@ -171,7 +171,7 @@
 										}
 						});
 
-					// Work.
+					// Skills.
 					$('#skills')
 						.scrollwatch({
 							delay:		25,
