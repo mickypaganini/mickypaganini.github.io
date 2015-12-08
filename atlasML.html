@@ -54,32 +54,44 @@
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
+								<h3>Projects</h3>
+								<h2>Dark Knowledge for the Matrix Element Method (MEM)</h2>
+								<p>The MEM is a Physics-driven, computationally expensive technique which is widely used in HEP due to the clear physical insights it provides. It directly connects theoretical and experimental Physics, by allowing us to estimate several parameters at once using integration over phase space and detector response. Its output is usally combined with  high level features, such as the 4-vectors of the particles in the event and the missing transverse energy, as inputs to a NN in order to augment the raw features with a Physics-instilled engineered variable.</p>
 
-								<h3>Dark Knowledge for the Matrix Element Method (MEM)</h3>
-								<p></p>
-
-								<p></p>
-
-								<hr />
-
-								<h3>RNN for Event Classification</h3>
-								<p></p>
-
-								<p></p>
+								<p>Our goal is to use Dark Knowledge to construct a net that would be able to mimic the performance of MEM, while reducing computational requirements. This net is expected to capture not only the performance but also the overall distribution shape of the output of MEM, in order to preserve its discriminating power as an input feature to the original NN.</p>
 
 								<hr />
 
-								<h3>Deep Learning for Top and Boson Tagging in Boosted Topologies</h3>
-								<p></p>
+								<h2>RNN for Event Classification</h2>
+								<p>As a member of the hh->yybb analysis group, I'm looking for evidence of the production of Higgs pairs decaying to two photons and a pair of b quark-antiquark. I use Machine Learning techniques to explore an event-level approach to Physics analysis, by designing, training and testing Recurrent Neural Networks using Keras, in order to classify events with variable numbers of particles.</p>
 
-								<p></p>
+								<p>This method allows for a holistic study of each event, by combining event-level variables with jet and photon specific features, without limiting the number of jets or particles under consideration. This represents a huge step forward from classic cut-based analyses.</p>
 
 								<hr />
 
-								<h3>b-Tagging using Tracks</h3>
-								<p></p>
+								<h2>Deep Learning for Top and Boson Tagging in Boosted Topologies</h2>
+								<p>During my first year at CERN, I developed a boosted boson tagger using Deep Learning for binary and multiclass classification purposes for the W’➝WZ analysis, as well as a boosted top tagger which outperformed ordinary substracture variable scans. At the time, I used a feed-forward neural network from the AGILEPack library, with stacked auto-encoders and unsupervised pre-training.</p>
+
+								<p>Additionally, I investigated the model's ability to learn high order correlations between tracking and calorimeter variables, and I performed variable selection studies and hyperparameters grid searches.</p>
+
+								<hr />
+
+								<h2>b-Tagging using Tracks</h2>
+								<p>An ongoing project of mine is to contribute to the improvement of the b-tagging pipeline by providing better solutions to the problem of flavor tagging using impact parameter based taggers.</p>
 
 								<p></p>
+								<hr />
+								<h3>Tools</h3>
+								In order to perform these studies (and more), I use the following tools:
+								<ul>
+									<li><a href="http://scikit-learn.org/stable/">Scikit-Learn</a></li>
+									<li><a href="http://keras.io/">Keras</a></li>
+									<li><a href="http://pandas.pydata.org/index.html">Pandas</a></li>
+									<li><a href="http://www.rootpy.org/">rootpy</a></li>
+									<li><a href="https://github.com/lukedeo/AGILEPack">AGILEPack</a></li>
+									<li><a href="https://root.cern.ch/tmva">TMVA</a></li>
+								</ul>
+
 
 
 							</div>
