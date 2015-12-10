@@ -4999,6 +4999,46 @@
 			.poptrox-popup:hover .closer:hover {
 				opacity: 1.0;
 			}
+
+
+/*---------------------------------------
+   3.2 SECTION: CLIENTS LIST    
+-----------------------------------------*/
+.client-logos {
+  margin-bottom: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.client-logos li {
+  display: inline-block;
+  margin: 25px 25px 25px 25px;
+  vertical-align: middle;
+}
+
+.client-logos li a{
+  display: block;
+  padding: 5px;
+}
+
+.client-logos li img {
+  max-height: 40px;
+  opacity: 0.6;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.client-logos li img:hover {
+  opacity: 1;
+  -webkit-filter: initial;
+  filter: initial;
+}
+
+.clients {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #dadfe3
+}
+
 			
 /*********************************************************************************/
 /* Touch Mode                                                                    */
@@ -5019,4 +5059,3 @@
 			body.touch .poptrox-popup .closer {
 				opacity: 1.0 !important;
 			}
-
