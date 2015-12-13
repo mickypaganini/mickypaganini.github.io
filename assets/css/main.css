@@ -3743,10 +3743,10 @@
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/ml2.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/ml2.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/ml2.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/ml2.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3990,7 +3990,7 @@
 	}
 
 	a {
-		color: #98c593;
+		/*color: #000000;*/ /*#98c593;*/
 
 		-moz-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -3998,6 +3998,13 @@
 		-ms-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 	}
+
+	a:hover {
+    color: #FFFF99;
+	}
+
+	a#overwhite:hover {color:hotpink}
+
 
 	sub {
 		position: relative;
@@ -5002,7 +5009,7 @@
 
 
 /*---------------------------------------
-   3.2 SECTION: CLIENTS LIST    
+   SECTION: CLIENTS LIST    
 -----------------------------------------*/
 .client-logos {
   margin-bottom: 0;
