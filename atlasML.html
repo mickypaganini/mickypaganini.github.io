@@ -22,8 +22,6 @@
   			src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 		</script>
 		
-		
-
 	</head>
 	<body>
 
@@ -62,10 +60,41 @@
 						<section class="wrapper style5">
 							<div class="inner">
 								<h3>Projects</h3>
+								<h2>Generative Adversarial Networks for Physics Simulation</h2>
+								<p>My main research interest at the moment is to train Generative Adversarial Networks (GANs) to speed up event simulation in Particle Physics. </p>
+
+								<p>Large simulated datasets are crucial in Particle Physics, just like in Nuclear Physics, Cosmology and other Physical Sciences, for interpreting results of ongoing experiments and for estimating yields of different proposed experimental setups. However, the complex simulation packages are very computationally expensive and time consuming. GANs are a deep learning solution that circumvents these problems by learning the data distribution and generating new samples from it.</p>
+
+								<p>In order to take advantage of the pixel-level symmetries of Physics events in our detectors while explicitly inducing location-based feature detection, we introduced an architecture modification to the ACGAN formulation which we call LAGAN (Location-Aware Generative Adversarial Network). Details of this study can be found in <a id="overwhite" href="https://arxiv.org/abs/1701.05927">this paper</a>, which I presented at the <a id="overwhite" href="https://indico.cern.ch/event/595059/timetable/#20170320">2017 CERN Interexperimental Machine Learning (IML) Workshop</a>:</p>
+
+								<center>
+									<iframe width="640" height="360" frameborder="0" src="https://cds.cern.ch/video/2256878?showTitle=true" allowfullscreen></iframe>
+								</center>
+								<hr />
+
+								<h2>Machine Learning for b-Tagging</h2>
+								<p>An ongoing project of mine is to contribute to the improvement of the $b$-tagging pipeline by providing scalable Machine Learning solutions. </p>
+
+								<p> In collaboration with colleagues from UC Irvine, Stanford and UGeneva, I've developed recurrent and convolutional architectures to improve upon the current impact parameter based tagging techniques. Drawing inspiration from NLP, I introduced the use of bidirectional recurrent units and 1D convolutional layers for jet tagging using the characteristics of the tracks that compose them. The first public results on this project are available in the ATLAS <a id="overwhite" href="https://cds.cern.ch/record/2255226/files/ATL-PHYS-PUB-2017-003.pdf">PUB-NOTE-2017-003</a>, which was presented at the <a id="overwhite" href="https://indico.cern.ch/event/577003/"> 2017 Connecting the Dots Workshop</a>.</p>
+
+								<p>My authorship qualification task for the ATLAS collaboration also included the optimization of a lower level tagger using Boosted Decision Trees.</p>
+								<hr />
+
 								<h2>Dark Knowledge for the Matrix Element Method (MEM)</h2>
 								<p>The <a id="overwhite" href="http://arxiv.org/pdf/hep-ex/0609053.pdf">MEM</a> is a Physics-driven, computationally expensive technique which is widely used in HEP due to the clear physical insights it provides. It directly connects theoretical and experimental Physics, by allowing us to estimate several parameters at once using integration over phase space and detector response. Its output is usally combined with  high level features, such as the 4-vectors of the particles in the event and the missing transverse energy, as inputs to a NN in order to augment the raw features with a Physics-instilled engineered variable.</p>
 
 								<p>Our goal is to use Dark Knowledge to construct a net that would be able to mimic the performance of MEM, while reducing computational requirements. This net is expected to capture not only the performance but also the overall distribution shape of the output of MEM, in order to preserve its discriminating power as an input feature to the original NN. Our benchmark is the $ttH$, with $H \rightarrow bb$</i> <a id="overwhite" href="http://arxiv.org/pdf/1503.05066v3.pdf">ATLAS analysis</a>. </p>
+
+								<hr />
+
+								<h2>Deep Learning for Top and Boson Tagging in Boosted Topologies</h2>
+								<p>During my first year at CERN, I developed a boosted boson tagger using Deep Learning for binary and multiclass classification purposes for the $W’\rightarrow WZ$ analysis, as well as a boosted top tagger which outperformed ordinary substracture variable scans.Additionally, I investigated the model's ability to learn high order correlations between tracking and calorimeter variables, and I performed variable selection studies and hyperparameters grid searches.</p>
+
+								<p>
+								At the time, I used a feed-forward neural network from the AGILEPack library, with stacked auto-encoders and unsupervised pre-training. </p>
+
+								<p>
+								My initial work later resulted in the published results outlined in the ATLAS <a id="overwhite" href="http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2017-004/">ATL-PHYS-PUB-2017-004</a>. </p>
 
 								<hr />
 
@@ -76,33 +105,18 @@
 
 								<hr />
 
-								<h2>Deep Learning for Top and Boson Tagging in Boosted Topologies</h2>
-								<p>During my first year at CERN, I developed a boosted boson tagger using Deep Learning for binary and multiclass classification purposes for the $W’\rightarrow WZ$ analysis, as well as a boosted top tagger which outperformed ordinary substracture variable scans. At the time, I used a feed-forward neural network from the AGILEPack library, with stacked auto-encoders and unsupervised pre-training.</p>
-
-								<p>Additionally, I investigated the model's ability to learn high order correlations between tracking and calorimeter variables, and I performed variable selection studies and hyperparameters grid searches.</p>
-
-								<hr />
-
-								<h2>Machine Learning for b-Tagging</h2>
-								<p>An ongoing project of mine is to contribute to the improvement of the $b$-tagging pipeline by providing scalable Machine Learning solutions. </p>
-
-								<p> In collaboration with colleagues from UC Irvine, Stanford and UGeneva, I've developed recurrent and convolutional architectures to improve upon the current impact parameter based tagging techniques. Drawing inspiration from NLP, I introduced the use of bidirectional recurrent units and 1D convolutional layers for jet tagging using the characteristics of the tracks that compose them. </p>
-
-								<p>My authorship qualification task for the ATLAS collaboration also included the optimization of a lower level tagger using Boosted Decision Trees.</p>
-								<hr />
-
 								<h3>Tools</h3>
 								In order to perform these studies (and more), I use the following tools:
 								<div class="partners white-bg" id="partners" role="region" aria-label="Affiliates Logos"><div class="container">
 									<ul class="client-logos">
 
-									<li><a href="http://scikit-learn.org/stable/" title=""><img src="images/sklearn.png" alt="Logo"></a></li>
-									<li><a href="http://keras.io/" title=""><img src="images/keras.jpg" alt="Logo"></a></li>
+									<li><a href="http://scikit-learn.org/stable/" title=""><img src="images/sklearn.png" alt="scikit-learn"></a></li>
+									<li><a href="http://keras.io/" title=""><img src="images/keras.jpg" alt="Keras"></a></li>
+									<li><a href="https://www.tensorflow.org/" title=""><img src="images/tf.png" alt="TensorFlow"></a></li>
 									<li><a href="http://pandas.pydata.org/index.html" title=""><img src="images/pandas.jpeg" alt="Logo"></a></li>
-									<li><a href="http://scipy.org/" title=""><img src="images/scipy.png" alt="Logo"></a></li>
-									<li><a href="http://www.rootpy.org/" title=""><img src="images/rootpy.png" alt="Logo"></a></li>
-									<li><a href="https://github.com/lukedeo/AGILEPack" title=""><img src="images/agilepack.jpg" alt="Logo"></a></li>
-									<li><a href="https://root.cern.ch/" title=""><img src="images/root.png" alt="Logo"></a></li>
+									<li><a href="http://scipy.org/" title=""><img src="images/scipy.png" alt="Pandas"></a></li>
+									<li><a href="http://www.rootpy.org/" title=""><img src="images/rootpy.png" alt="rootpy"></a></li>
+									<li><a href="https://root.cern.ch/" title=""><img src="images/root.png" alt="ROOT"></a></li>
 									<!-- <li><a href="https://root.cern.ch/tmva" title=""><img src="images/tmva.gif" alt="Logo"></a></li> -->
 
 								
