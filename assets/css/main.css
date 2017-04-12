@@ -3946,7 +3946,7 @@
 	}
 
 	body.is-mobile.splash #page-wrapper {
-		background: none;
+		background-color: none;
 	}
 
 	body.is-mobile.splash #banner,
