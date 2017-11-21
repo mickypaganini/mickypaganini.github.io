@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Michela Paganini</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/academicons.css"/>
+    <!-- <link rel="stylesheet" href="assets/fonts/font-mfizz.css"> -->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+    <!-- Latex Math -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+                           tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+                           });
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script> 
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-97381584-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Pixelarity JS -->
+    <script src="assets/js/jquery.min.js"></script>
+     <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script> 
+
+    <!-- Full Page -->
+    <link rel="stylesheet" type="text/css" href="assets/jquery.fullPage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/vendors/jquery.easings.min.js"></script>
+    <!-- // <script type="text/javascript" src="assets/jquery.fullPage.js"></script> -->
+    <script type="text/javascript" src="assets/jquery.fullpage.extensions.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#000', 'none', 'none', '#3498db', '#9b59b6'],
+                recordHistory: false,
+                offsetSections: true,
+                autoScrolling: true,
+                navigation: true,
+                slidesNavigation: true,
+                controlArrows: false,
+                responsiveSlides: true,
+                scrollHorizontally: true,
+                normalScrollElements: 'ul.main',
+                // loopBottom: true,
+                afterRender: function () {
+                    setInterval(function () {
+                        $.fn.fullpage.moveSlideRight();
+                    }, 1000);
+                },
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        #fp-nav ul li a span, 
+        .fp-slidesNav ul li a span {
+            width: 10px;
+            height: 10px;
+            margin: -8px 0 0 -8px;
+            background: transparent;
+            box-sizing: border-box;
+            box-shadow: inset 0 0 0 1px #D3D3D3;
+            overflow: hidden;
+            -webkit-animation: 4s ease 0s normal forwards 1 fadein;
+            animation: 4s ease 0s normal forwards 1 fadein;
+            
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 0;
+              border-radius: 50%;
+              left: 0;
+              bottom: 0;
+              background-color: #fff;
+              box-shadow: 0 0 1px #fff;
+              transition: height 0.3s;
+              
+           }
+        }
+              
+        #fp-nav ul li a.active span, 
+        .fp-slidesNav ul li a.active span, 
+        #fp-nav ul li:hover a.active span, 
+        .fp-slidesNav ul li:hover a.active span {
+            width: 10px;
+            height: 10px;
+            margin: -8px 0 0 -8px;
+            background: transparent;
+            box-sizing: border-box;
+            box-shadow: inset 0 0 0 2px #D3D3D3;
+            
+           &::after {
+             height: 100%;
+           }
+        }
+    </style>
+
+
+</head>
+
+
+
+
+<body class="landing">
+
+    <!-- Header -->
+        <header id="header" class="alt">
+            <!-- <h1><a href="index.html">Michela Paganini</a></h1> -->
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <!-- <li><a href="#whoami">Who am I</a></li>
+                                <li><a href="#skills">My Skills</a></li>
+                                <li><a href="#Physics">Physics</a></li> -->
+                                <li><a href="./atlasML.html">CERN Machine Learning</a></li>
+                                <!-- <li><a href="#interests">Interests</a></li>
+                                <li><a href="#cta">Contacts</a></li> -->
+                                <!-- <li><a href="#">Sign Up</a></li> -->
+                                <!-- <li><a href="#">Log In</a></li> -->
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <section id="banner">
+                <div class="inner">
+                    <h2>Michela Paganini</h2>
+                    <p>Physics PhD Student</p>
+                    <p>Deep Learning Researcher</p>
+                    <p>Science Educator</p>
+                </div>
+                <div class="mouse-icon">
+                    <div class="wheel"></div>
+                </div>
+        </section>      
+        </div>
+
+        <div class="section" id="section2">
+            <h1 id="sec2title">Who am I</h1>
+            <p class="contentwrap"> 
+                I'm a 5th year Physics PhD student at Yale University studying experimental High Energy Physics.<br /> 
+                I apply Deep Learning to data from the ATLAS Experiment at CERN. <br />
+                In my spare time, I teach myself new foreign languages and data visualization techniques. <br />
+                I truly enjoy learning. <br />
+                I believe in reproducible research. <br />
+                I love sports, technology, fine dining, and design. 
+            </p>
+            <div class="social-icons">
+                <ul class="icons">
+                  <li><a href="https://www.linkedin.com/in/michelapaganini"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://github.com/mickypaganini"><i class="fa fa-github"></i></a></li>
+                  <li><a href="https://scholar.google.com/citations?user=JZkMgQcAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a></li>
+                  <li><a href="http://inspirehep.net/author/profile/Michela.Paganini.1"><i class="ai ai-inspire"></i></a></li>
+                  <li><a href="http://orcid.org/0000-0003-4102-8002"><i class="ai ai-orcid"></i></a></li>
+                </ul>
+            </div> <!-- /.social-icons -->
+
+            <!-- <img id="diagram" data-src="images/code.png" /> -->
+        </div>
+        <div class="section" id="section3">
+            <h1 id="sec3title">Education</h1>
+            <div class="resume">
+
+                <ul class="timeline">
+                    <li>
+                        <div class="posted-date">
+                            <span class="month">2013-present</span>
+                        </div> <!-- /posted-date -->
+                        <div class="timeline-panel fadeInUp">
+                            <div class="timeline-content">
+                                <div class="timeline-heading">
+                                    <h3>Yale University</h3>
+                                    <span>MS, MPhil, PhD in Physics</span>
+                                </div><!-- /timeline-heading -->
+                                <div class="timeline-body">
+                                    <p>New Haven, CT, USA</p>
+                                </div><!-- /timeline-body -->
+                            </div> <!-- /timeline-content -->
+                        </div><!-- /timeline-panel -->
+                    </li>
+
+                    <li class="timeline-inverted">
+                        <div class="posted-date">
+                            <span class="month">2010-2013</span>
+                        </div><!-- /posted-date -->
+
+                        <div class="timeline-panel wow fadeInUp">
+                            <div class="timeline-content">
+                                <div class="timeline-heading">
+                                    <h3>UC Berkeley</h3>
+                                    <span>BA in Astrophysics, BA in Physics</span>
+                                </div><!-- /timeline-heading -->
+
+                                <div class="timeline-body">
+                                    <p>Berkeley, CA, USA</p>
+                                </div><!-- /timeline-body -->
+                            </div> <!-- /timeline-content -->
+                        </div> <!-- /timeline-panel -->
+                    </li>
+
+                    <li>
+                        <div class="posted-date">
+                          <span class="month">2012</span>
+                        </div><!-- /posted-date -->
+
+                        <div class="timeline-panel wow fadeInUp">
+                            <div class="timeline-content">
+                                <div class="timeline-heading">
+                                    <h3>University of Cambridge</h3>
+                                    <span>Pembroke-King's Programme</span>
+                                </div><!-- /timeline-heading -->
+
+                                <div class="timeline-body">
+                                    <p>Cambridge, UK</p>
+                                </div><!-- /timeline-body -->
+                            </div> <!-- /timeline-content -->
+                        </div><!-- /timeline-panel -->
+                    </li>
+                </ul>
+            </div> <!-- resume -->
+        </div> <!-- section3 -->
+        
+        <!-- Research Slides -->
+        <div class="section" id="sectionslides">
+            <div class="slide">
+                <!-- <h1 id="sec4title">Research</h1>
+                <section class="spotlight">
+                    <div class="image"><img src="images/atlas_detector.jpg" alt="" /></div><div class="content">
+                    <h2><a href="./atlas_splash.html">ATLAS Experiment at CERN</a></h2>
+                        <p>I'm often located in Geneva, Switzerland where I conduct research for my PhD thesis as a member of the ATLAS collaboration at CERN (European Council for Nuclear Research). I develop software for the optimization of particle identification for the flavor tagging group, and I'm involved in the LHC-wide Machine Learning working group to push for the adoption of modern ML in High Energy Physics and the improvement of our current libraries and tools. My analysis focuses on the search of Higgs boson pairs decaying into $\gamma\gamma$bb.</p>
+                    </div>
+                </section>
+            </div>
+            <div class="slide">
+                <section class="spotlight">
+                    <div class="image"><img src="images/lbl.jpg" alt="" /></div><div class="content">
+                    <h2><a href="./atlas_splash.html">Berkeley National Lab</a></h2>
+                        <p>When I'm not at CERN, you can find me at LBNL where I'm currently a visiting Research Affiliate in the Physics Division. I collaborate with colleagues from ATLAS and NERSC (the National Energy Research Scientific Computing center) on projects at the intersection of physics and computing. Our most recent joint work focuses on training Generative Adversarial Networks (GANs) to speed up High Energy Physics simulation.</p>
+                    </div>
+                </section>
+            </div>
+            <div class="slide">
+               <section class="spotlight">
+                    <div class="image"><img src="images/yalegroup.jpg" alt="" /></div><div class="content">
+                    <h2><a href="./atlas_splash.html">Yale University</a></h2>
+                        <p>At Yale, I worked with Prof. Tobias Golling on the design and application of Deep Learning algorithms to develop taggers for the identification of top quarks and gauge bosons in boosted topologies. I am currently a member of Prof. Paul Tipton's group, and I'm working on a qualification task to optimize b-tagging techniques, by including track-jets for Run II at the LHC (Large Hadron Collider). At Yale, I was a Teaching Fellow for 2 years, a McDougal Fellow and a member of the Graduate Student Assembly.</p>
+                    </div>
+                </section>
+            </div>
+            <div class="slide">
+               <section class="spotlight">
+                    <div class="image"><img src="images/berkeley.jpg" alt="" /></div><div class="content">
+                    <h2>UC Berkeley</h2>
+                        <p>I graduated from Cal in 2013 with a double major in Astrophysics and Physics. During my undergraduate studies, I explored different research fields, including theoretical, observational and computational galactic dynamics, search for extraterrestrial intelligence at the SETI Institute, space weather at the Space Sciences Lab, and antimatter production with the AEgIS experiment at CERN. At Berkeley, I discovered my passion for teaching while tutoring at the Athletic Study Center and designing a new course named <i>Sense &amp; Science &amp; Sensibility</i> with professors Saul Perlmutter, Rob MacCoun and John Campbell.</p>
+                    </div>
+                </section> -->
+            </div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+        </div>
+
+
+        <div class="section" id="section5">
+            <h1 id="sec5title">Upcoming Dates</h1>
+            <ul class="main">
+
+                <li class="date">
+                    <h3>Oct 19</h3>
+                    <p>Apple</p>
+                </li>
+                <li class= "events">
+                    <ul class="events-detail">
+                        <li>
+                            <a href="http://www.baylearn.org/overview">
+                                <span class="event-time">all day - </span>
+                                <span class="event-name">BayLearn</span>
+                                <br />
+                                <span class="event-location">4 Infinite Loop, Cupertino, CA</span>
+                            </a>
+                        </li>
+                    </ul>   
+                </li>
+
+                <li class="date">
+                    <h3>Oct 26</h3>
+                    <p>Lawrence Berkeley National Lab</p>
+                </li>
+                <li class= "events">
+                    <ul class="events-detail">
+                        <li>
+                            <a href="#">
+                                <span class="event-time">10am PST - </span>
+                                <span class="event-name">LUX Machine Learning Seminar</span>
+                                <br />
+                                <span class="event-location">1 Cyclotron Road, Berkeley, CA</span>
+                            </a>
+                        </li>
+                    </ul>   
+                </li>
+
+                <li class="date">
+                    <h3>Nov 3</h3>
+                    <p>CERN</p>
+                </li>
+                <li class= "events">
+                    <ul class="events-detail">
+                        <li>
+                            <a href="https://indico.cern.ch/event/655447/">
+                                <span class="event-time">7:45am PST - </span>
+                                <span class="event-name">Inter-Experimental Machine Learning Lecture on Frontiers in GAN Research</span>
+                                <br />
+                                <span class="event-location">503-1-001 - Council Chamber</span>
+                            </a>
+                        </li>
+                    </ul>   
+                </li>
+
+
+                <li class="date">
+                    <h3>Nov 6 - 8</h3>
+                    <p>NASA Ames Research Center</p>
+                </li>
+                <li class= "events">
+                    <ul class="events-detail">
+                        <li>
+                            <a href="http://bit.ly/radiationworkshop">
+                                <span class="event-time">all day - </span>
+                                <span class="event-name">Workshop on Radiation Characterization</span>
+                                <br />
+                                <span class="event-location">Building 152, Moffett Field, Mountain View, CA</span>
+                            </a>
+                        </li>
+                    </ul>   
+                </li>
+
+                <li class="date">
+                    <h3>Nov 13</h3>
+                    <p>Rice University</p>
+                </li>
+                <li class= "events">
+                    <ul class="events-detail">
+                        <li>
+                            <a href="#">
+                                <span class="event-time">TBD - </span>
+                                <span class="event-name">Seminar on Machine Learning for High Energy Physics</span>
+                                <br />
+                                <span class="event-location">Houston, TX</span>
+                            </a>
+                        </li>
+                    </ul>   
+                </li>
+
+                <li class="date">
+                    <h3>Nov 16</h3>
+                    <p>Texas A&M University</p>
+                </li>
+                <li class= "events">
+                    <ul class="events-detail">
+                        <li>
+                            <a href="http://mitchell.tamu.edu/events/seminars/#">
+                                <span class="event-time">1:15pm CDT - </span>
+                                <span class="event-name">Mitchell Institute Seminar</span>
+                                <br />
+                                <span class="event-location">MIST M102</span>
+                            </a>
+                        </li>
+                    </ul>   
+                </li>
+
+                <li class="date">
+                    <h3>Nov 30</h3>
+                    <p>Google</p>
+                </li>
+                <li class= "events">
+                    <ul class="events-detail">
+                        <li>
+                            <a href="https://sites.google.com/view/socml/home?authuser=0">
+                                <span class="event-time">all day - </span>
+                                <span class="event-name">Self-Organizing Conference on Machine Learning</span>
+                                <br />
+                                <span class="event-location">Sunnyvale, CA</span>
+                            </a>
+                        </li>
+                    </ul>   
+                </li>
+
+                <li class="date">
+                    <h3>Dec 4</h3>
+                    <p>Long Beach, CA</p>
+                </li>
+                <li class= "events">
+                    <ul class="events-detail">
+                        <li>
+                            <a href="http://wimlworkshop.org/2017/">
+                                <span class="event-time">all day - </span>
+                                <span class="event-name">Women in Machine Learning (WiML) Workshop </span>
+                                <br />
+                                <span class="event-location">Long Beach Convention Center</span>
+                            </a>
+                        </li>
+                    </ul>   
+                </li>
+
+                <li class="date">
+                    <h3>Dec 4 - 9</h3>
+                    <p>Long Beach, CA</p>
+                </li>
+                <li class= "events">
+                    <ul class="events-detail">
+                        <li>
+                            <a href="https://nips.cc/">
+                                <span class="event-time">all day - </span>
+                                <span class="event-name">NIPS</span>
+                                <br />
+                                <span class="event-location">Long Beach Convention Center</span>
+                            </a>
+                        </li>
+                    </ul>   
+                </li>
+
+                <li class="date">
+                    <h3>Dec 8</h3>
+                    <p>Long Beach, CA</p>
+                </li>
+                <li class= "events">
+                    <ul class="events-detail">
+                        <li>
+                            <a href="https://dl4physicalsciences.github.io/">
+                                <span class="event-time">all day - </span>
+                                <span class="event-name">Workshop on Deep Learning for Physical Sciences</span>
+                                <br />
+                                <span class="event-location">Long Beach Convention Center</span>
+                            </a>
+                        </li>
+                    </ul>   
+                </li>
+
+                <li class="date">
+                    <h3>Dec 11 - 13</h3>
+                    <p>Lawrence Berkeley National Lab</p>
+                </li>
+                <li class= "events">
+                    <ul class="events-detail">
+                        <li>
+                            <a href="https://indico.physics.lbl.gov/indico/event/546/">
+                                <span class="event-time">all day - </span>
+                                <span class="event-name">Workshop on Machine Learning for Jet Physics</span>
+                                <br />
+                                <span class="event-location">Berkeley, CA</span>
+                            </a>
+                        </li>
+                    </ul>   
+                </li>
+                
+
+            </ul>      
+        </div>
+
+
+
+</body> 
+</html>
