@@ -2243,14 +2243,14 @@
 		display: inline-block;
 		font-size: 0.8em;
 		font-weight: 600;
-		height: 3.125em;
+		/*height: 3.125em;*/
 		letter-spacing: 0.225em;
 		line-height: 3.125em;
 		padding: 0 2.75em;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
-		white-space: nowrap;
+		/*white-space: nowrap;*/
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
@@ -2354,8 +2354,8 @@
 			input[type="button"],
 			button,
 			.button {
-				height: 3.75em;
-				line-height: 3.75em;
+				/*height: 3.75em;
+				line-height: 3.75em;*/
 			}
 
 		}
@@ -2512,7 +2512,7 @@
 			}
 
 		.spotlight .content {
-			padding: 2em 4em 0.1em 4em ;
+			padding: 2em 4em 2em 4em ;
 			-moz-order: 2;
 			-webkit-order: 2;
 			-ms-order: 2;
@@ -2607,7 +2607,7 @@
 		@media screen and (max-width: 736px) {
 
 			.spotlight .content {
-				padding: 3em 2em 1em 2em ;
+				padding: 3em 2em 3em 2em ;
 			}
 
 		}
@@ -3638,8 +3638,8 @@
 
 			#banner {
 				padding: 7em 3em 5em 3em ;
-				height: auto;
-				min-height: 0;
+				/*height: auto;*/
+				/*min-height: 0;*/
 			}
 
 				#banner h2 {
@@ -3647,7 +3647,7 @@
 				}
 
 				#banner br {
-					display: none;
+					/*display: none;*/
 				}
 
 				#banner .more {
@@ -4091,7 +4091,7 @@
 	
 		section,
 		article {
-			margin-bottom: 3em;
+			/*margin-bottom: 3em;*/
 		}
 		
 			section > :last-child,
@@ -4363,8 +4363,9 @@
 			color: #fff;
 			cursor: pointer;
 			display: inline-block;
-			height: 3.5em;
-			line-height: 3.5em;
+			/*height: 3.5em;
+			line-height: 3.5em;*/
+			/*width: 70%;*/
 			outline: 0;
 			padding: 0 2em 0 2em;
 			position: relative;
@@ -4585,7 +4586,7 @@
 		
 			.main.style3 {
 				text-align: center;
-				padding: 6em 0 6em 0;
+				padding: 4em 1em 3em 1em;
 			}
 
 				.main.style3 .content {
@@ -4846,8 +4847,8 @@
 	
 	#footer {
 		position: relative;
-		height: 5em;
-		line-height: 5em;
+		/*height: 5em;
+		line-height: 5em;*/
 		margin: 0;
 		background: #39454b;
 		color: #999;
@@ -5102,3 +5103,20 @@
 			body.touch .poptrox-popup .closer {
 				opacity: 1.0 !important;
 			}
+
+/*********/
+/* other */
+/*********/
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
