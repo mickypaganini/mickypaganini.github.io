@@ -28,7 +28,7 @@
 		line-height: 1;
 	}
 
-	ol, ul {
+	ol, ul, li{
 		list-style: none;
 	}
 
@@ -5120,3 +5120,88 @@
     height: 100%;
     border: 0;
 }
+
+.date {
+  width: 20%;
+  padding: 1% 1% 0 0 ;
+  float: left;
+  /*color: white;*/
+}
+
+.date h3 {
+  font-size: 1.2em;
+}
+
+.date p {
+  font-size: .8em;
+  line-height: 1;
+}
+
+.events {
+  float: left;
+  width: 80%;
+  border-left: 1px solid #ccc;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-top: 0.5%;
+}
+
+.events-detail {
+  /*max-width: 550px;*/
+}
+
+.events-detail li{
+  padding: 2%;
+  border-bottom: 1px dashed #ccc;
+  /*line-height: 2%;*/
+  transition: ease .4s all;
+}
+
+.events-detail li:hover {
+  background: #e9e9e9;
+}
+
+.event-time {
+  font-weight: 900;
+  color: #ccc;
+}
+
+.events-detail li a {
+  text-decoration: none;
+  color: #444;
+  width: 100%;
+  height: 100%;
+  display: block;
+  list-style-type: none;
+}
+
+.event-location {
+    font-size: .8em;
+    color: #3498db;
+    margin-left: 0%;
+}
+
+@media all and (max-width: 641px) {
+    .date {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      /*margin-bottom: 10px;*/
+    }
+  
+  .events {
+    border:none;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 3%;
+  }
+  
+  .events-detail {
+    padding: 0;
+  }
+  
+  li.date p {
+    /*margin:0;*/
+  }
+}
+
+
